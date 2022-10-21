@@ -1,0 +1,107 @@
+/* Navbar */
+navbar {
+  color: #38d38f;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.nav-link {
+  font-size: 16px;
+}
+
+/* .nav-link.active {
+    font-weight: 700;
+  } */
+
+.btn-satu {
+  width: 135px;
+  height: 40px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+  background-size: 200%;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn-satu:hover {
+  background-position: right;
+}
+
+.btn-dua {
+  width: 150px;
+  height: 45px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+  background-size: 200%;
+  font-size: 1rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn-dua:hover {
+  background-position: right;
+}
+
+/* Hero Section */
+
+#hero {
+  background: #fff;
+  padding-top: 2rem;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-tagline h1 {
+  color: #38d38f;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 72px;
+}
+
+.hero-tagline p {
+  font-size: 16px;
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  line-height: 30px;
+  width: 85%;
+}
+/* akhir hero */
+
+#about {
+  background: #38d38f;
+  padding-top: 2rem;
+  height: 100vh;
+  width: 100%;
+}
+
+.about-tagline h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 72px;
+}
+
+.hero-tagline p {
+  font-size: 16px;
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  line-height: 30px;
+  width: 85%;
+}

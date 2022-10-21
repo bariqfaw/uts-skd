@@ -14,10 +14,10 @@
     <img class="wave" src="img/wave.png" />
     <div class="container">
       <div class="img">
-        <img src="img/bg.svg" />
+        <img src="img/student.svg" />
       </div>
       <div class="login-content">
-        <form action="index.html">
+        <form action="signup_process.php" method="POST">
           <img src="img/schools.svg" />
           <h2 class="title">Register</h2>
           <div class="input-div one">
@@ -50,7 +50,7 @@
           <input type="submit" name="submit" class="btn" value="Register" />
           <p>
             Have an account?
-            <a href="login.php">Login</a>
+            <a href="login.php" style="text-align: center;">Login</a>
           </p>
         </form>
       </div>
