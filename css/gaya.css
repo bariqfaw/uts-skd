@@ -1,8 +1,4 @@
 /* Navbar */
-navbar {
-  color: #38d38f;
-}
-
 .navbar-brand {
   font-weight: 700;
 }
@@ -84,6 +80,7 @@ navbar {
 /* akhir hero */
 
 #about {
+  padding: 100px 0;
   background: #38d38f;
   padding-top: 2rem;
   height: 100vh;
@@ -97,11 +94,10 @@ navbar {
   line-height: 72px;
 }
 
-.hero-tagline p {
-  font-size: 16px;
-  color: #000;
-  margin-top: 20px;
-  margin-bottom: 60px;
-  line-height: 30px;
-  width: 85%;
+sub-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
 }

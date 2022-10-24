@@ -18,7 +18,7 @@ $sql = "INSERT INTO `users` (`fullname`, `username`, `password`) VALUES ('$fulln
 
 if ($conn->query($sql) === TRUE){
     //echo "Pendaftaran sukses, silahkan kembali dan lanjutkan login";
-    header("Location:login.php");
+    header("Location:index.php");
 } else {
     echo "error :" . $sql . "<br>" . $conn->error;
 }

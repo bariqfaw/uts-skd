@@ -24,4 +24,5 @@ if($cek>0){
     $uname = $aName1['username'];
 }else{
     echo "Login Gagal cek Username dan Password";
+    header("Location:index.php");
 }

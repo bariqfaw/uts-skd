@@ -1,9 +1,14 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/gaya.css" />
+    <script src="https://kit.fontawesome.com/1faa5cc1ce.js" crossorigin="anonymous"></script>
     <title>Home | UTS</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -12,7 +17,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body style="background:#38d38f">
     <nav class="navbar fixed-top navbar-expand-lg bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">SEKOLAHKITA</a>
@@ -39,9 +44,9 @@
               <a class="nav-link" href="#">About</a>
             </li>
           </ul>
-          <a href="logout.php">
-            <button class="btn-satu">Logout</button>
-          </a>
+          <div>
+            <a href="logout.php"> <button class="btn-satu">Logout</button> </a>
+          </div>
         </div>
       </div>
     </nav>
@@ -59,31 +64,35 @@
             </p>
             <a href="#"><button class="btn-dua">Get Started</button></a>
           </div>
+          <div class="col-md-6 my-auto">
+            <img src="img/book.svg" class="w-100" alt="img">
+          </div>
         </div>
       </div>
     </section>
     <!-- akhir Hero -->
 
-    <section id="about">
+    <section id="about"> 
       <div class="container h-100">
-        <div class="row h-100 p-5">
-          <div class="card p-5" style="border-radius: 2rem">
+        <div class="h-100 p-5 text-center about-tagline">
+          <h1 class="">Data Siswa</h1>
+          <div class="card p-5 mt-5" style="border-radius: 2rem">
             <table class="table table-light table-hover">
               <thead>
                 <tr>
                   <th>ID</th>
-                  <th>Fullname</th>
+                  <th>Nama Lengkap</th>
                   <th>Username</th>
                   <th>Password</th>
                 </tr>
               </thead>
               <tbody>
                 <?php
-                      include "koneksi.php";
-                      $no = 1;
-                      $query = mysqli_query($conn, "SELECT * FROM users");
-                      while ($data = mysqli_fetch_array($query)) {
-                    ?>
+                    include "koneksi.php";
+                    $no = 1;
+                    $query = mysqli_query($conn, "SELECT * FROM users");
+                    while ($data = mysqli_fetch_array($query)) {
+                  ?>
                 <tr>
                   <td><?php echo $no++ ?></td>
                   <td><?php echo $data['fullname'] ?></td>
@@ -93,7 +102,7 @@
                 <?php } ?>
               </tbody>
             </table>
-            <a href="signup.php"><button class="btn-dua">Tambah Data</button></a>
+            <a href="signup.php"><button class="btn-dua" style="align-item: center">Tambah Data</button></a>
           </div>
         </div>
       </div>
@@ -101,10 +110,16 @@
     <!-- akhir Hero -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path
-        fill="#38d38f"
+        fill="#fff"
         fill-opacity="1"
         d="M0,160L40,154.7C80,149,160,139,240,160C320,181,400,235,480,234.7C560,235,640,181,720,181.3C800,181,880,235,960,261.3C1040,288,1120,288,1200,266.7C1280,245,1360,203,1400,181.3L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
       ></path>
     </svg>
+
+    <footer class="text-center p-3" style="background-color:#fff">
+      <p>Created with love <i class="fa-solid fa-heart"></i> 
+      <a href="https://www.instagram.com/bariq.faw/" class="fw-bold" style="color:#38d38f; text-decoration:none" >Bariq Faw</a></p>
+    </footer>
+    <!-- akhir footer -->
   </body>
 </html>

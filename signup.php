@@ -25,7 +25,7 @@
               <i class="fas fa-user"></i>
             </div>
             <div class="div">
-              <h5>Full Name</h5>
+              <h5>Nama Lengkap</h5>
               <input type="text" name="fullname" class="input" />
             </div>
           </div>
@@ -50,7 +50,7 @@
           <input type="submit" name="submit" class="btn" value="Register" />
           <p>
             Have an account?
-            <a href="login.php" style="text-align: center;">Login</a>
+            <a href="index.php" style="text-align: center;">Login</a>
           </p>
         </form>
       </div>
