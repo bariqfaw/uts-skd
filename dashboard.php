@@ -83,21 +83,22 @@ session_start();
                   <th>ID</th>
                   <th>Nama Lengkap</th>
                   <th>Username</th>
-                  <th>Password</th>
                 </tr>
               </thead>
               <tbody>
                 <?php
                     include "koneksi.php";
+                    include "caesar.php";
+
                     $no = 1;
                     $query = mysqli_query($conn, "SELECT * FROM users");
+                    
                     while ($data = mysqli_fetch_array($query)) {
-                  ?>
+                    ?>
                 <tr>
                   <td><?php echo $no++ ?></td>
                   <td><?php echo $data['fullname'] ?></td>
                   <td><?php echo $data['username'] ?></td>
-                  <td><?php echo $data['password'] ?></td>
                 </tr>
                 <?php } ?>
               </tbody>

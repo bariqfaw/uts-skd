@@ -17,11 +17,13 @@ $enkripuser = encrypt($text, $key);
 $sql = "INSERT INTO `users` (`fullname`, `username`, `password`) VALUES ('$fullname', '$enkripuser', '$password_md5')";
 
 if ($conn->query($sql) === TRUE){
-    //echo "Pendaftaran sukses, silahkan kembali dan lanjutkan login";
-    header("Location:index.php");
+    echo("<script LANGUAGE='JavaScript'>
+        window.alert('Registrasi Berhasil');
+        window.location.href='index.php';
+        </script>");
 } else {
-    echo "error :" . $sql . "<br>" . $conn->error;
+    echo("<script LANGUAGE='JavaScript'>
+        window.alert('Registrasi Gagal');
+        window.location.href='signup.php';
+        </script>");
 }
-
-
-$conn->close();

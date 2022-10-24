@@ -23,6 +23,8 @@ if($cek>0){
     header("Location:dashboard.php");
     $uname = $aName1['username'];
 }else{
-    echo "Login Gagal cek Username dan Password";
-    header("Location:index.php");
+    echo("<script LANGUAGE='JavaScript'>
+        window.alert('Login Gagal cek Username dan Password');
+        window.location.href='index.php';
+        </script>");
 }
